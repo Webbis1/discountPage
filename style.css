@@ -324,7 +324,7 @@ body {
 }
 .discount-product__service-element input[type=checkbox]:checked::after {
   content: "";
-  background-image: url(/assets/image/select-btn.png);
+  background-image: url(assets/image/select-btn.png);
   background-size: contain; /* или cover, в зависимости от нужного эффекта */
   background-repeat: no-repeat;
   background-position: center;
