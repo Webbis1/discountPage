@@ -196,6 +196,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 19px;
+  color: #797FA1 !important;
 }
 .discount-product__reason-discription {
   font-size: 14px;
@@ -204,9 +205,9 @@ body {
 }
 .discount-product__reason-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 276px));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 250px));
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 13px;
   width: 100%;
