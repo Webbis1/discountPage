@@ -328,20 +328,20 @@ body {
             height: 20px;
             aspect-ratio: 1;
             cursor: pointer;
-            border: 1px solid black;
+            border: 1px solid #797fa1;
             border-radius: 2px;
             background-color: #ffffff; /* Изменение цвета фона */
             appearance: none;
             position: relative; /* Для псевдоэлементов */
             transition: all 0.2s ease; /* Плавное изменение */
             &:hover {
-                border-color: #797fa1;
+                border-color:#282828 ;
             }
         }
 
         /* Стиль для отмеченного чекбокса */
         input[type="checkbox"]:checked {
-            background-color: #797fa1;
+            background-color: #282828;
             // border-color: #2a3a6b; /* Изменение цвета рамки */
             border: none;
             padding: 2px;
