@@ -196,7 +196,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 19px;
-  color: #797FA1 !important;
+  color: #797fa1 !important;
 }
 .discount-product__reason-discription {
   font-size: 14px;
@@ -319,16 +319,21 @@ body {
 .discount-product__service-element input[type=checkbox]:checked {
   background-color: #797fa1;
   border: none;
+  padding: 2px;
+  position: relative;
 }
 .discount-product__service-element input[type=checkbox]:checked::after {
-  content: "✓";
+  content: "";
+  background-image: url(/assets/image/select-btn.png);
+  background-size: contain; /* или cover, в зависимости от нужного эффекта */
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
+  width: 84%;
+  height: 84%;
 }
 .discount-product__service-name {
   margin-right: 6px;
@@ -375,12 +380,14 @@ body {
 .discount-product__save-buttons button {
   aspect-ratio: 1;
   width: 30px;
-  background-color: #000000;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 7px;
   cursor: pointer;
 }
 
 .discount-main__another-dors {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin-top: 91px;
 }
 
@@ -420,7 +427,7 @@ body {
 }
 
 .help-section__wrapper {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
