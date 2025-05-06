@@ -205,7 +205,7 @@ body {
 }
 .discount-product__reason-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
