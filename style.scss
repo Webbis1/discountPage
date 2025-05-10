@@ -430,6 +430,7 @@ body {
 }
 
 .another-dors__item {
+    height: auto !important;
 }
 
 .discount-main__help-section {
@@ -535,7 +536,7 @@ body {
     justify-content: center;
     position: relative;
     & > img {
-        // width: 100%;
+        width: 80%;
         max-width: 100%;
         object-fit: contain;
         object-position: center;
