@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -19,11 +24,11 @@
             <div class="discount-product__left">
                 <div class="discount-product__image">
                     <div class="discount-product__image-wrapper">
-                        <img src="assets/image/image2.png" alt="Внешняя часть двери" title="Внешняя часть двери"
+                        <img src="/assets/image/image2.png" alt="Внешняя часть двери" title="Внешняя часть двери"
                             class="discount-product__outside-image">
                     </div>
                     <div class="discount-product__image-wrapper">
-                        <img src="assets/image/image4.png" alt="Внутренняя часть двери" title="Внутренняя часть двери"
+                        <img src="/assets/image/image4.png" alt="Внутренняя часть двери" title="Внутренняя часть двери"
                             class="discount-product__inside-image">
                         <div class="discount-product__discount">
                             -50%
@@ -57,7 +62,8 @@
                 </div>
             </div>
             <div class="discount-product__right">
-                <div class="discount-product__title">Дверь <h1>Название двери</h1>
+                <div class="discount-product__title">Дверь
+                    <h1>Название двери</h1>
                 </div>
                 <div class="discount-product__field">
                     <div class="discount-product__criteria">Код:</div>
@@ -84,13 +90,13 @@
                     <div class="discount-product__reason-discription">Присутствует незначительная вмятина на внешней
                         панели снизу, замят нижний угол, царапины и скол на внутренней панели.</div>
                     <div class="discount-product__reason-images">
-                        <div class="discount-product__reason-image"><img src="assets/image/Rectangle53.png" alt="">
+                        <div class="discount-product__reason-image"><img src="/assets/image/Rectangle53.png" alt="">
                         </div>
-                        <div class="discount-product__reason-image"><img src="assets/image/image2.png" alt=""></div>
-                        <div class="discount-product__reason-image"><img src="assets/image/image4.png" alt=""></div>
-                        <div class="discount-product__reason-image"><img src="assets/image/Rectangle53.png" alt="">
+                        <div class="discount-product__reason-image"><img src="/assets/image/image2.png" alt=""></div>
+                        <div class="discount-product__reason-image"><img src="/assets/image/image4.png" alt=""></div>
+                        <div class="discount-product__reason-image"><img src="/assets/image/Rectangle53.png" alt="">
                         </div>
-                        <div class="discount-product__reason-image"><img src="assets/image/Rectangle53.png" alt="">
+                        <div class="discount-product__reason-image"><img src="/assets/image/Rectangle53.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -118,8 +124,7 @@
                     <p class="discount-product__old-price">
                         <b>
                             18 900
-                        </b>
-                        ₽
+                        </b> ₽
                     </p>
                 </div>
                 <div class="discount-product__services">
@@ -148,7 +153,7 @@
                 </div>
                 <div class="discount-product__save-buttons">
                     <button>
-                        
+
                     </button>
                     <button>
 
@@ -160,21 +165,126 @@
             <div class="another-dors__title">
                 Другие двери по распродаже
             </div>
-            <ul class="another-dors__list">
-                <li class="another-dors__item">
-
+            <ul class="another-dors__list swiper-wrapper" role="list">
+                <li class="another-dors__item swiper-slide another-door" role="listitem">
+                    <div class="another-door__wrapper">
+                        <a href="#" class="another-door__image">
+                            <img src="assets/image/image2.png" alt="name door">
+                            <div class="another-door__popular">Популярное</div>
+                        </a>
+                        <a href="#" class="another-door__title">
+                            name door
+                        </a>
+                        <div class="another-door__prices">
+                            <div class="another-door__actual-price">40000р</div>
+                            <div class="another-door__old-price">50000р</div>
+                        </div>
+                    </div>
                 </li>
-                <li class="another-dors__item">
-
+                <li class="another-dors__item swiper-slide another-door" role="listitem">
+                    <div class="another-door__wrapper">
+                        <a href="#" class="another-door__image">
+                            <img src="assets/image/image2.png" alt="name door">
+                            <div class="another-door__popular">Популярное</div>
+                        </a>
+                        <a href="#" class="another-door__title">
+                            name door
+                        </a>
+                        <div class="another-door__prices">
+                            <div class="another-door__actual-price">40000р</div>
+                            <div class="another-door__old-price">50000р</div>
+                        </div>
+                    </div>
                 </li>
-                <li class="another-dors__item">
-
+                <li class="another-dors__item swiper-slide another-door" role="listitem">
+                    <div class="another-door__wrapper">
+                        <a href="#" class="another-door__image">
+                            <img src="assets/image/image2.png" alt="name door">
+                            <div class="another-door__popular">Популярное</div>
+                        </a>
+                        <a href="#" class="another-door__title">
+                            name door
+                        </a>
+                        <div class="another-door__prices">
+                            <div class="another-door__actual-price">40000р</div>
+                            <div class="another-door__old-price">50000р</div>
+                        </div>
+                    </div>
                 </li>
-                <li class="another-dors__item">
-
+                <li class="another-dors__item swiper-slide another-door" role="listitem">
+                    <div class="another-door__wrapper">
+                        <a href="#" class="another-door__image">
+                            <img src="assets/image/image2.png" alt="name door">
+                            <div class="another-door__popular">Популярное</div>
+                        </a>
+                        <a href="#" class="another-door__title">
+                            name door
+                        </a>
+                        <div class="another-door__prices">
+                            <div class="another-door__actual-price">40000р</div>
+                            <div class="another-door__old-price">50000р</div>
+                        </div>
+                    </div>
                 </li>
-                <li class="another-dors__item">
-
+                <li class="another-dors__item swiper-slide another-door" role="listitem">
+                    <div class="another-door__wrapper">
+                        <a href="#" class="another-door__image">
+                            <img src="assets/image/image2.png" alt="name door">
+                            <div class="another-door__popular">Популярное</div>
+                        </a>
+                        <a href="#" class="another-door__title">
+                            name door
+                        </a>
+                        <div class="another-door__prices">
+                            <div class="another-door__actual-price">40000р</div>
+                            <div class="another-door__old-price">50000р</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="another-dors__item swiper-slide another-door" role="listitem">
+                    <div class="another-door__wrapper">
+                        <a href="#" class="another-door__image">
+                            <img src="assets/image/image2.png" alt="name door">
+                            <div class="another-door__popular">Популярное</div>
+                        </a>
+                        <a href="#" class="another-door__title">
+                            name door
+                        </a>
+                        <div class="another-door__prices">
+                            <div class="another-door__actual-price">40000р</div>
+                            <div class="another-door__old-price">50000р</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="another-dors__item swiper-slide another-door" role="listitem">
+                    <div class="another-door__wrapper">
+                        <a href="#" class="another-door__image">
+                            <img src="assets/image/image2.png" alt="name door">
+                            <div class="another-door__popular">Популярное</div>
+                        </a>
+                        <a href="#" class="another-door__title">
+                            name door
+                        </a>
+                        <div class="another-door__prices">
+                            <div class="another-door__actual-price">40000р</div>
+                            <div class="another-door__old-price">50000р</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="another-dors__item swiper-slide another-door" role="listitem">
+                    <div class="another-door__wrapper">
+                        <a href="#" class="another-door__image">
+                            <img src="assets/image/image2.png" alt="name door">
+                            <div class="another-door__popular">Популярное</div>
+                        </a>
+                        <a href="#" class="another-door__title">
+                            name door
+                        </a>
+                        <div class="another-door__prices">
+                            <div class="another-door__actual-price">40000р</div>
+                            <div class="another-door__old-price">50000р</div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -227,6 +337,29 @@
             // Функция для форматирования цены (добавляет пробелы между тысячами)
             function formatPrice(price) {
                 return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+            }
+        });
+    </script>
+
+
+    <!-- Swiper -->
+    <script>
+        new Swiper('.another-dors', {
+            slidesPerView: 1, // По умолчанию 1 слайд
+            spaceBetween: 10,
+            breakpoints: {
+                768: {  // На экранах от 768px
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {  // На экранах от 1024px
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1440: {  // На экранах от 1024px
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                }
             }
         });
     </script>

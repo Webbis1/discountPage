@@ -4,17 +4,20 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 .header,
 .bread-btn {
     background-color: gray;
     padding: 50px 112px;
     border-bottom: 1px solid black;
 }
+
 .discount-main {
     flex: 1;
 }
@@ -37,9 +40,7 @@ body {
     display: flex;
     align-items: flex-start;
     // flex-wrap: wrap;
-
     gap: 34px;
-
     @media (max-width: 1000px) {
         flex-direction: column;
     }
@@ -55,7 +56,6 @@ body {
         }
         max-width: 100%;
     }
-
     &__image {
         display: flex;
         // align-items: center;
@@ -63,7 +63,6 @@ body {
         gap: 18px;
         max-width: 100%;
     }
-
     &__image-wrapper {
         // height: 100%;
         // flex: 1;
@@ -84,7 +83,6 @@ body {
             flex: 1;
         }
     }
-
     &__outside-image {
         position: absolute;
         top: 50%;
@@ -94,10 +92,8 @@ body {
         width: 100%;
         // height: 100%;
     }
-
     &__inside-image {
     }
-
     &__discount {
         position: absolute;
         top: 21px;
@@ -109,14 +105,12 @@ body {
         font-weight: 600;
         padding: 11px;
     }
-
     &__discritpions {
         display: flex;
         gap: 18px;
         flex-wrap: wrap;
         max-width: 100%;
     }
-
     &__image-discription {
         h4 {
             border-bottom: 1px solid gray;
@@ -124,13 +118,11 @@ body {
             padding-bottom: 14px;
         }
     }
-
     &__sub-title {
         white-space: nowrap;
         font-size: 14px;
         font-weight: 600;
     }
-
     &__discription-picture {
         font-size: 12px;
         font-weight: 500;
@@ -141,20 +133,16 @@ body {
         margin-bottom: 7px;
         padding-right: 46px;
     }
-
     &__gray-element {
         color: #9a9a9a;
     }
-
     &__discription-content {
         white-space: nowrap;
         font-size: inherit;
         font-weight: inherit;
     }
-
     &__right {
         // min-height: 700px;
-
         // background-color: #9a9a9a;
         flex: 1;
         position: relative;
@@ -225,7 +213,6 @@ body {
         // flex-wrap: wrap;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
-
         // overflow: auto;
         flex-direction: row;
         justify-content: flex-start;
@@ -257,7 +244,6 @@ body {
         // border: none;
         margin-bottom: 17px;
     }
-
     &__equipment-list {
         list-style: none;
     }
@@ -330,15 +316,17 @@ body {
             cursor: pointer;
             border: 1px solid #797fa1;
             border-radius: 2px;
-            background-color: #ffffff; /* Изменение цвета фона */
+            background-color: #ffffff;
+            /* Изменение цвета фона */
             appearance: none;
-            position: relative; /* Для псевдоэлементов */
-            transition: all 0.2s ease; /* Плавное изменение */
+            position: relative;
+            /* Для псевдоэлементов */
+            transition: all 0.2s ease;
+            /* Плавное изменение */
             &:hover {
-                border-color:#282828 ;
+                border-color: #282828;
             }
         }
-
         /* Стиль для отмеченного чекбокса */
         input[type="checkbox"]:checked {
             background-color: #282828;
@@ -347,12 +335,12 @@ body {
             padding: 2px;
             position: relative;
         }
-
         /* Добавление галочки с помощью псевдоэлемента */
         input[type="checkbox"]:checked::after {
             content: "";
             background-image: url(assets/image/select-btn.png);
-            background-size: contain; /* или cover, в зависимости от нужного эффекта */
+            background-size: contain;
+            /* или cover, в зависимости от нужного эффекта */
             background-repeat: no-repeat;
             background-position: center;
             position: absolute;
@@ -422,6 +410,7 @@ body {
     background-color: #f5f5f5;
     margin-top: 91px;
 }
+
 .another-dors {
     display: flex;
     flex-direction: column;
@@ -429,32 +418,31 @@ body {
     padding-top: 102px;
     padding-bottom: 118px;
 }
+
 .another-dors__title {
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 39px;
 }
+
 .another-dors__list {
-    display: flex;
     list-style: none;
-    flex-direction: row;
-    overflow: auto;
     width: 100%;
-    gap: 51px;
 }
+
 .another-dors__item {
-    height: 400px;
-    width: 260px;
-    background-color: #ffffff;
+    
 }
 
 .discount-main__help-section {
 }
+
 .help-section {
     width: 100%;
     padding-top: 76px;
     padding-bottom: 105px;
 }
+
 .help-section__wrapper {
     background-color: #f5f5f5;
     border-radius: 20px;
@@ -465,6 +453,7 @@ body {
     gap: 30px;
     padding: 51px;
 }
+
 .help-section__text {
     display: flex;
     flex-direction: column;
@@ -473,21 +462,23 @@ body {
     gap: 20px;
     flex: 1;
 }
+
 .help-section__title {
     font-size: 40px;
     font-weight: 500;
 }
+
 .help-section__answer {
     font-size: 20px;
     font-weight: 400;
 }
+
 .help-section__button {
     min-width: 50%;
     padding-block: 19px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     button {
         background-color: #000000;
         border-radius: 10px;
@@ -506,4 +497,104 @@ body {
             font-size: 24px;
         }
     }
+}
+
+.another-dors {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    z-index: 1;
+}
+
+.another-door__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    justify-content: start;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: all 0.3s linear 0s;
+    border: white 2px solid;
+    &:hover {
+        border-color: #000000;
+        & .another-door__title::after{
+            opacity: 1;
+        }
+    }
+}
+
+.another-door__image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    & > img {
+        // width: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+    & > .another-door__popular {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        background-color: #ee4b4b;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+}
+
+.another-door__title {
+    color: #000000;
+    font-size: 16px;
+    margin-block: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    width: 100%;
+    &::after{
+        transition: all 0.3s linear 0s;
+        opacity: 0;
+        content: "";
+        background-color: #000000;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-image: url("assets/image/arrow-right.png");
+        background-position: center;
+        // background-size: 100%;
+        background-repeat: no-repeat;
+        // padding: 11px;
+    }
+}
+
+.another-door__prices {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.another-door__actual-price {
+    color: #f6a70c;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.another-door__old-price {
+    font-weight: 500;
+    font-size: 14px;
+    color: #7d7a76;
+    background-color: #edeeef;
+    border-radius: 6px;
+    padding: 3px 5px 1px;
 }

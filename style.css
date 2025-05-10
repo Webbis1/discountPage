@@ -306,12 +306,15 @@ body {
   cursor: pointer;
   border: 1px solid #797fa1;
   border-radius: 2px;
-  background-color: #ffffff; /* Изменение цвета фона */
+  background-color: #ffffff;
+  /* Изменение цвета фона */
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  position: relative; /* Для псевдоэлементов */
-  transition: all 0.2s ease; /* Плавное изменение */
+  position: relative;
+  /* Для псевдоэлементов */
+  transition: all 0.2s ease;
+  /* Плавное изменение */
 }
 .discount-product__service-element input[type=checkbox]:hover {
   border-color: #282828;
@@ -325,7 +328,8 @@ body {
 .discount-product__service-element input[type=checkbox]:checked::after {
   content: "";
   background-image: url(assets/image/select-btn.png);
-  background-size: contain; /* или cover, в зависимости от нужного эффекта */
+  background-size: contain;
+  /* или cover, в зависимости от нужного эффекта */
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -406,18 +410,8 @@ body {
 }
 
 .another-dors__list {
-  display: flex;
   list-style: none;
-  flex-direction: row;
-  overflow: auto;
   width: 100%;
-  gap: 51px;
-}
-
-.another-dors__item {
-  height: 400px;
-  width: 260px;
-  background-color: #ffffff;
 }
 
 .help-section {
@@ -482,4 +476,103 @@ body {
   .help-section__button button {
     font-size: 24px;
   }
+}
+
+.another-dors {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  z-index: 1;
+}
+
+.another-door__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  justify-content: start;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: all 0.3s linear 0s;
+  border: white 2px solid;
+}
+.another-door__wrapper:hover {
+  border-color: #000000;
+}
+.another-door__wrapper:hover .another-door__title::after {
+  opacity: 1;
+}
+
+.another-door__image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.another-door__image > img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.another-door__image > .another-door__popular {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #ee4b4b;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.another-door__title {
+  color: #000000;
+  font-size: 16px;
+  margin-block: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  width: 100%;
+}
+.another-door__title::after {
+  transition: all 0.3s linear 0s;
+  opacity: 0;
+  content: "";
+  background-color: #000000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url("assets/image/arrow-right.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.another-door__prices {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.another-door__actual-price {
+  color: #f6a70c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.another-door__old-price {
+  font-weight: 500;
+  font-size: 14px;
+  color: #7d7a76;
+  background-color: #edeeef;
+  border-radius: 6px;
+  padding: 3px 5px 1px;
 }/*# sourceMappingURL=style.css.map */
