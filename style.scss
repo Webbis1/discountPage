@@ -11,8 +11,7 @@ body {
     min-height: 100vh;
 }
 
-.header,
-.bread-btn {
+.header{
     background-color: gray;
     padding: 50px 112px;
     border-bottom: 1px solid black;
@@ -597,4 +596,36 @@ body {
     background-color: #edeeef;
     border-radius: 6px;
     padding: 3px 5px 1px;
+}
+
+
+
+.bread-btn {
+    margin-block: 40px;
+    
+}
+.bread-btn__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+}
+.bread-btn__item {
+    margin-right: 10px;
+    &:last-child>.bread-btn__link {
+        color: #a8afbb !important;
+        &::after{
+            display: none;
+        }
+    }
+}
+.bread-btn__link {
+    color: #5d6775;
+    font-size: .875rem;
+    text-decoration: none;
+    &::after{
+        content: "/";
+        color: #a8afbb;
+        margin-left: 10px;
+    }
 }
