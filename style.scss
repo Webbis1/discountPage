@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
 }
 
-.header{
+.header {
     background-color: gray;
     padding: 50px 112px;
     border-bottom: 1px solid black;
@@ -430,7 +430,6 @@ body {
 }
 
 .another-dors__item {
-    
 }
 
 .discount-main__help-section {
@@ -519,7 +518,7 @@ body {
     border: white 2px solid;
     &:hover {
         border-color: #000000;
-        & .another-door__title::after{
+        & .another-door__title::after {
             opacity: 1;
         }
     }
@@ -560,7 +559,7 @@ body {
     justify-content: space-between;
     font-weight: 500;
     width: 100%;
-    &::after{
+    &::after {
         transition: all 0.3s linear 0s;
         opacity: 0;
         content: "";
@@ -596,13 +595,23 @@ body {
     background-color: #edeeef;
     border-radius: 6px;
     padding: 3px 5px 1px;
+    b {
+        font-weight: inherit;
+        position: relative;
+        &::after {
+            content: "";
+            border-bottom: #7d7a76 solid 2px;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-10deg);
+        }
+    }
 }
-
-
 
 .bread-btn {
     margin-block: 40px;
-    
 }
 .bread-btn__list {
     display: flex;
@@ -612,18 +621,18 @@ body {
 }
 .bread-btn__item {
     margin-right: 10px;
-    &:last-child>.bread-btn__link {
+    &:last-child > .bread-btn__link {
         color: #a8afbb !important;
-        &::after{
+        &::after {
             display: none;
         }
     }
 }
 .bread-btn__link {
     color: #5d6775;
-    font-size: .875rem;
+    font-size: 0.875rem;
     text-decoration: none;
-    &::after{
+    &::after {
         content: "/";
         color: #a8afbb;
         margin-left: 10px;

@@ -575,6 +575,19 @@ body {
   border-radius: 6px;
   padding: 3px 5px 1px;
 }
+.another-door__old-price b {
+  font-weight: inherit;
+  position: relative;
+}
+.another-door__old-price b::after {
+  content: "";
+  border-bottom: #7d7a76 solid 2px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+}
 
 .bread-btn {
   margin-block: 40px;
