@@ -490,6 +490,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
   padding: 16px;
   justify-content: start;
   border-radius: 10px;
@@ -501,6 +502,9 @@ body {
   border-color: #000000;
 }
 .another-door__wrapper:hover .another-door__title::after {
+  opacity: 1;
+}
+.another-door__wrapper:hover .another-door__buttons {
   opacity: 1;
 }
 
@@ -619,4 +623,23 @@ body {
   content: "/";
   color: #a8afbb;
   margin-left: 10px;
+}
+
+.another-door__buttons {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  top: 15px;
+  right: 15px;
+  gap: 10px;
+  transition: all 0.3s linear 0s;
+  opacity: 0;
+}
+.another-door__buttons button {
+  aspect-ratio: 1;
+  background-color: #000000;
+  height: 50px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
